@@ -1,0 +1,28 @@
+# dependências e builds
+node_modules/
+.next/
+.open-next/
+.wrangler/
+.dry/
+*.log
+*.pid
+out/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# segredos: nunca versionar
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+npm-debug.log*

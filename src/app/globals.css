@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #e9eeeb;
+  --panel: #f6f8f7;
+  --fg: #15231f;
+  --muted: #4b5852;
+  --line: #bcc8c2;
+  --gold: #8a6508;
+  --gold-fill: #d9a21b;
+  --river: #1e5b73;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1815;
+    --panel: #16221e;
+    --fg: #e6ede9;
+    --muted: #a3b0aa;
+    --line: #2a3a34;
+    --gold: #e3b341;
+    --gold-fill: #e3b341;
+    --river: #7fc0d9;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-gold: var(--gold);
+  --color-gold-fill: var(--gold-fill);
+  --color-river: var(--river);
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--river);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--river);
+  outline-offset: 3px;
+}

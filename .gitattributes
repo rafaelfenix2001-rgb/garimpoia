@@ -1,0 +1,5 @@
+# Evita quebra de linha CRLF/LF entre Windows e Linux (CI roda em Linux).
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
